@@ -7,17 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <!--lesson4-->
-    <div id="books">
-        <!-- <h1 v-on:click="clickHandler">{{ title }}</h1> -->
-        <!--lesson 5-->
-        <h1 v-on:click="toggleHandler">{{ title }}</h1>
-        <div id="bookDetails" v-show="toggleShow">
-            <h3>{{ author }}</h3>
-            <p>{{ summary }}</p>    
-        </div>
+    <!--lesson6-->
+    <div id="colors">
+        <ul>
+            <li v-for="(color, index) in colors" :style="{color:color}">{{index}} {{color}}</li>
+        </ul>
     </div>
-    
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="app.js"></script>
 </body>

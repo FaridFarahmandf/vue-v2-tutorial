@@ -1,19 +1,10 @@
-//lesson4
-const books = new Vue({
-    el:"#books",
+//lesson6
+
+const colorRainbow = ["red", "orange", "yellow","green", "blue", "indigo", "violet"];
+
+const colors = new Vue({
+    el: "#colors",
     data: {
-        title: "The imaginary library",
-        author: "Matt Heige",
-        summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur libero ipsa, illum ea rerum aliquam quis optio omnis. Inventore, laboriosam.",
-        toggleShow: true,
-    },
-    methods: {
-        // clickHandler: function() {
-        //     alert(this.title);
-        // }
-        //lesson 5
-        toggleHandler: function() {
-            this.toggleShow = !this.toggleShow;
-        }
+        colors: colorRainbow,
     }
-});
+})
