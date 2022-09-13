@@ -14,5 +14,10 @@ const example = new Vue({
         title:"Hello",
         message:"this is the example",
         name: "Farid",
+        //lesson3
+        img: {
+            src:"./assets/images/cat1.jpg",
+            alt:"the pretty cat"
+        }
     }
 })
