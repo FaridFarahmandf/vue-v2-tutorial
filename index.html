@@ -7,11 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-    <!--lesson6-->
-    <div id="colors">
-        <ul>
-            <li v-for="(color, index) in colors" :style="{color:color}">{{index}} {{color}}</li>
-        </ul>
+    <!--lesson7-->
+    <div class="container">
+        <div id="media-list">
+            <h1>{{ title }}</h1>
+            <select>
+                <option>Select a type of media...</option>
+            </select>
+            <ul>
+                <li v-for="media in mediaList">
+                    <h3> {{ media.title }} </h3>
+                    <div>
+                        <p>{{media.description}}</p>
+                        <p>{{media.contributor}}</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="app.js"></script>
