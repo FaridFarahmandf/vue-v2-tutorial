@@ -7,18 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <!--lesson1-->
-    <div id="helloWorld">
-        <h1>{{ title }}</h1>
-        <p>{{ message }}</p>
-    </div>
-    <hr/>
-    <!--lesson2-->
-    <div id="example">
-        <h1>{{title + ", "+ name}}</h1>
-        <p v-text="message"></p>
-        <!--lesson3-->
-        <img v-bind:src="img.src" :alt="img.alt" style="width: 400px;">
+    <!--lesson4-->
+    <div id="books">
+        <h1 v-on:click="clickHandler">{{ title }}</h1>
+        <h3>{{ author }}</h3>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
